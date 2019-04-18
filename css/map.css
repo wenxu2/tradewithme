@@ -1,0 +1,97 @@
+/*
+##Device = mobile
+*/
+@media screen and (max-width: 799px) {
+    .column1{
+        display: none;
+    }
+
+    .column2{
+         float: middle;
+         width: 100%;
+         padding: 10px;
+         height: 100vh;
+         margin:10px;
+     }
+ 
+     /* Clear floats after the columns */
+     .row:after {
+         content: "";
+         display: table;
+         clear: both;
+     }
+
+    #map{
+        display: inline-block;
+        height:400px;
+        width:100%;
+        margin: 5px
+    }
+
+    .small{
+        display: inline;
+    }
+    
+ }
+ /* 
+ ##Device = desktop, tablet
+ */
+ @media (min-width: 800px) {
+ 
+    #map{
+        float: right;
+        height:400px;
+        width:100%;
+        margin: 5px
+    }
+
+    .small{
+        display: none;
+    }
+
+     /* Create two equal columns that floats next to each other */
+     .column1 {
+        float: left;
+        width: 40%;
+        padding: 10px;
+        height: 100vh; 
+    }
+    
+    .column2{
+        float: right;
+        width: 60%;
+        padding: 10px;
+        height: 100vh; 
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+ }
+
+.profile{
+    height: 15rem;
+    width: 15rem;
+    margin: 20px;
+    padding: 5px;
+}
+
+.titleText{
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: ridge;
+    padding-bottom: 20px;
+}
+
+.book{
+    height: 15rem;
+    width: 15rem;
+    margin: 20px;
+    padding: 5px;
+}
+
+ 
+ 

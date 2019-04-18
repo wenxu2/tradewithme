@@ -1,0 +1,142 @@
+/*
+##Device = mobile
+*/
+@media screen and (max-width: 799px) {
+   .column1{
+       display: none;
+   }
+
+   .column2{
+        float: middle;
+        width: 100%;
+        padding: 10px;
+        height: 100vh;
+        margin:10px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .card_style{
+        width: 80%;
+        margin: 50px;
+
+    }
+
+    .verifiedText{
+        
+        text-indent: 50px;
+        text-align: justify;
+        letter-spacing: 3px;
+    }
+
+    .large{
+        margin: 5px;
+        padding-bottom: 20px;
+    }
+}
+/* 
+##Device = desktop, tablet
+*/
+@media (min-width: 800px) {
+
+    .large{
+        display: none;
+    }
+
+    .small{
+
+        margin: 5px;
+        padding-left: 20px;
+    }
+    /* Create two equal columns that floats next to each other */
+    .column1 {
+        float: left;
+        width: 30%;
+        padding: 10px;
+        height: 301vh; 
+        border-right: ridge;
+    }
+    
+    .column2{
+        float: right;
+        width: 70%;
+        padding: 10px;
+        height: 100vh; 
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .card_style{
+        width: 80%;
+        margin-left: 100px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    .navstyle{
+        display: none;
+    }
+
+    .verifiedText{
+        text-indent: 50px;
+        text-align: justify;
+        letter-spacing: 3px;
+    }
+
+}
+
+.profile{
+    height: 15rem;
+    width: 15rem;
+    padding: 10px;
+}
+
+img{
+    margin: 10px;
+}
+
+.titleText{
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: ridge;
+    padding-bottom: 20px;
+}
+
+button:hover {
+    background: #0b7dda;
+  }
+
+button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+* {
+    box-sizing: border-box;
+  }
