@@ -22,8 +22,8 @@ $("button").click(function(){
   console.log("test");
   let zip;
 
-  let zip_1 = $("#zipcode_1").val();
-  let zip_2 = $("#zipcode_2").val();
+  let zip_1 = $("#classcode1").val();
+  let zip_2 = $("#classcode2").val();
   console.log(zip_1);
   console.log(zip_2);
 
@@ -35,7 +35,6 @@ $("button").click(function(){
     zip = zip_2;
   }
 
-
   $('img').filter("#preloader").css("display","inline");
   
   fetch(url, function(){
@@ -44,7 +43,7 @@ $("button").click(function(){
     $('img').filter("#preloader").css("display","none");
     response.json().then(function(data) {
       for (var i = 0; i < data.records.length; i++) {
-        if(data.records[i].zip != zip)
+        if(!data.records[i].classname.includes(zip))
           $('.card_style').filter(`#${data.records[i].id}`).css("display","none");
       }
 
