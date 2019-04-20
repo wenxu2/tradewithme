@@ -10,9 +10,7 @@ fetch(url, function(){
         for (var i = 0; i < data.records.length; i++) {
           console.log(data.records[i]);
           $(".name").filter(`#${data.records[i].id}`).text(data.records[i].book);
-
-          
-
+          $(".classname").filter(`#${data.records[i].id}`).text(data.records[i].classname);
         }
 
       });
