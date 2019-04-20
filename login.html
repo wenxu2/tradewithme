@@ -3,22 +3,31 @@
   <head>
     <title>Marketing</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="marketplace.css">
+    <link rel="stylesheet" href="css/marketplace.css">
   </head>
   <body>
     <div id="wrapper">
     <header>
-   	 <h1>Login In</h1>
+   	 <h1>Login</h1>
     </header>
     <main>
      <form name="login" action="home.html" method="post">
-      Username: <input type="text" name="userName"/>
-      Password: <input type="password" name="password"/>
-      <input type="submit" value="Login"/>
-      <input type="reset" value="Cancel" />
+       <div>
+          <b>Username</b>
+      </div>
+        <div><input type="text" name="userName"/></div>
+      <div>
+          <b>Password</b>
+      </div>
+      <div>
+        <input type="password" name="password"/>
+      </div>
+      <div>
+          <a href="home.html" class="button button2">Login</a>
+          <input class="button button3" type="reset" value="Cancel" />
+      </div>
       </form>
    </main>
-  <footer></footer>
   </div>
   </body>
 </html>
